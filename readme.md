@@ -15,3 +15,6 @@
 - Artesanato sustentável (fotos)
     - Com modal
 - Contato
+
+
+[Licença](LICENSE)
