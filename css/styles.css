@@ -12,7 +12,7 @@
  */
  @font-face {
   font-family: 'Ethnocentric';
-  src: url('../assets/fonts/ethnocentric.ttf') format('truetype');
+  src: url('fonts/ethnocentric.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
