@@ -53,7 +53,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 181, 54, 54;
+  --bs-primary-rgb: 66, 10, 10;
   --bs-secondary-rgb: 24, 5, 5;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -2035,7 +2035,7 @@ progress {
   background-color: #fff;
   border-color: #8ddece;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(181, 54, 54, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(66, 10, 10, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2182,7 +2182,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: #8ddece;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(181, 54, 54, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(66, 10, 10, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -2262,7 +2262,7 @@ textarea.form-control-lg {
 .form-check-input:focus {
   border-color: #8ddece;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(181, 54, 54, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(66, 10, 10, 0.25);
 }
 .form-check-input:checked {
   background-color: #d2aa30;
@@ -2352,10 +2352,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(181, 54, 54, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(66, 10, 10, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(181, 54, 54, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(66, 10, 10, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2999,7 +2999,7 @@ textarea.form-control-lg {
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #d2aa30;
   --bs-btn-hover-border-color: #d2aa30;
-  --bs-btn-focus-shadow-rgb: 181, 54, 54;
+  --bs-btn-focus-shadow-rgb: 66, 10, 10;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #d2aa30;
   --bs-btn-active-border-color: #d2aa30;
@@ -4362,7 +4362,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2317a98c'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-border-color: #8ddece;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(181, 54, 54, 0.25);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(66, 10, 10, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: #17a98c;
@@ -4525,7 +4525,7 @@ textarea.form-control-lg {
   --bs-pagination-hover-border-color: #dee2e6;
   --bs-pagination-focus-color: var(--bs-link-hover-color);
   --bs-pagination-focus-bg: #e9ecef;
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(181, 54, 54, 0.25);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(66, 10, 10, 0.25);
   --bs-pagination-active-color: #fff;
   --bs-pagination-active-bg: #d2aa30;
   --bs-pagination-active-border-color: #d2aa30;
@@ -5163,7 +5163,7 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(181, 54, 54, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(66, 10, 10, 0.25);
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -6670,7 +6670,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
   color: #fff !important;
-  background-color: RGBA(181, 54, 54, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(66, 10, 10, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -10981,9 +10981,30 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  background-image: url('../assets/img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
+.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Ajuste a opacidade conforme necessário */
+}
+.masthead-content {
+  position: relative;
+  z-index: 1;
+  /* Adicione padding conforme necessário */
+  padding: 20px;
+  /* Opcional: adicione um fundo semi-transparente para melhorar a legibilidade */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
@@ -11022,7 +11043,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(181, 54, 54, 0.9);
+  background-color: rgba(66, 10, 10, 0.9);
 }
 .galery .galery-item .galery-item-caption:hover {
   opacity: 1;
