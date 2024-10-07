@@ -100,6 +100,26 @@
   :root {
     scroll-behavior: smooth;
   }
+  .masthead-heading {
+    font-size: 1.5rem;
+}
+
+.masthead-avatar {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0.5rem 0;
+}
+
+.container {
+    padding: 0 1rem;
+}
 }
 
 body {
